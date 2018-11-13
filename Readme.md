@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Anna Raulets](https://up.htmlacademy.ru/htmlcss/23/user/870333).
-* Наставник: `Неизвестно`.
+* Наставник: [Малик Киров](https://htmlacademy.ru/profile/id17217).
 
 ---
 
