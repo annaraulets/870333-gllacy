@@ -8,17 +8,60 @@
   	<header>
   		<nav>
   			<a href="#">
-  				<img src="img/logo.svg" alt="Логотип сайта «Глейси»">
+  				<img src="img/logo.svg" width="154" height="64" alt="Логотип сайта «Глейси»">
   			</a>
   			<ul>
-  				<li><a href="catalog.html">Каталог</a></li>
+  				<li>
+            <button>Каталог</button>
+            <ul>
+              <li><a href="#"><b>Новинки</b></a></li>
+              <li><a href="#">Сливочные</a></li>
+              <li><a href="#">Щербеты</a></li>
+              <li><a href="#">Фруктовый лед</a></li>
+              <li><a href="#">Мелорин</a></li>  
+            </ul>
+          </li>
   				<li><a href="delivery.html">Доставка и оплата</a></li>
   				<li><a href="info.html">О Компании</a></li>
   			</ul>
   		</nav>
   		<ul>
-  				<li><a href="search.html"><img src="img/loupe.svg" alt="Поиск"></a></li>
-  				<li><a href="login.html"><img src="img/entrance.svg">Вход</a></li>
+  				<li>
+            <button><img src="img/loupe.svg" alt="Поиск"></a></button>
+            <section>
+              <form>
+                <label class="visually-hidden">Поиск
+                  <input type="search" name="search-input" placeholder="Что ищем?">
+                </label>
+              </form>
+            </section>
+
+          </li>
+  				<li>
+            <button>
+              <img src="img/entrance.svg">
+              <span class="visually-hidden">Вход</span>
+            </button>
+            <section>
+              <form >
+                <p>
+                  <label class="visually-hidden" for="login-email">Емейл для входа</label>
+                  <input id="login-email" type="email" name="login-email">
+                </p>
+                <p>
+                  <label class="visually-hidden" for="user-password">Пароль</label>
+                  <input id="user-password" type="password" name="user-password">
+                </p>
+                <button type="submit">Войти</button>
+                <p>
+                  <a href="#">Забыли пароль?</a>
+                  <br>
+                  <a href="#">Новая регистрация</a>
+                </p>
+              </form>
+            </section>
+          </li>
+
   				<li><a href="cart.html"><img src="img/basket.svg" alt="Корзина">Пусто</a></li>
   			</ul>
   	</header>
@@ -42,7 +85,12 @@
   			<p>
   				Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) 
   			</p>
-  			<!-- здесь будет форма -->
+  			<form>
+          <label class="visually-hidden"></label>  
+            <input type="email" name="user-email" placeholder="Электронная почта">
+          </label> 
+          <button class="button" type="submit">Отправить</button> 
+        </form>
   		</div>
   	</main>
 
@@ -68,13 +116,31 @@
   		<section>
   			<p>
   				<a href="https://htmlacademy.ru">
-  				<img src="img/logo-htmlacademy.svg"></a>
+  				<img src="img/logo-htmlacademy.svg" width="108" height="39"></a>
   			</p>
   			<p>
   				Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2017
   			</p>
   		</section>
   	</footer>
+
+    <section class="modal">
+      <h3>Мы вам обязательно ответим!</h3>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="user-name"></label>
+          <input id="user-name" type="text" name="name" placeholder="Как вас зовут?">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-email"></label>
+          <input id="user-email" type="email" name="user-email" placeholder="Ваша почта для ответа?">
+        </p>
+        <p>
+          <textarea name="comment" id="comment-field" rows="10" placeholder="Напишите что-нибудь..."></textarea>
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
 
   </body>
 </html>
