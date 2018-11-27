@@ -12,7 +12,7 @@
   			</a>
   			<ul>
   				<li>
-            <button>Каталог</button>
+            <a href="catalog.html">Каталог</a>
             <ul>
               <li><a href="#"><b>Новинки</b></a></li>
               <li><a href="#">Сливочные</a></li>
@@ -27,12 +27,11 @@
   		</nav>
   		<ul>
   				<li>
-            <button><img src="img/loupe.svg" alt="Поиск"></a></button>
+            <a><img src="img/loupe.svg" alt="Поиск"></a>
             <section>
               <form>
-                <label class="visually-hidden">Поиск
-                  <input type="search" name="search-input" placeholder="Что ищем?">
-                </label>
+                <label class="visually-hidden" for="search-input">Поиск</label>
+                  <input id="search-input" type="search" name="search-input" placeholder="Что ищем?">
               </form>
             </section>
 
@@ -86,16 +85,12 @@
   				Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) 
   			</p>
   			<form>
-          <label class="visually-hidden"></label>  
-            <input type="email" name="user-email" placeholder="Электронная почта">
-          </label> 
+          <label class="visually-hidden" for="user-email"></label>  
+            <input id="user-email" type="email" name="user-email" placeholder="Электронная почта">
           <button class="button" type="submit">Отправить</button> 
         </form>
   		</div>
   	</main>
-
-
-
 
 
   	<footer>
@@ -116,13 +111,15 @@
   		<section>
   			<p>
   				<a href="https://htmlacademy.ru">
-  				<img src="img/logo-htmlacademy.svg" width="108" height="39"></a>
+  				<img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Академия"></a>
   			</p>
   			<p>
   				Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2017
   			</p>
   		</section>
   	</footer>
+
+
 
     <section class="modal">
       <h3>Мы вам обязательно ответим!</h3>
