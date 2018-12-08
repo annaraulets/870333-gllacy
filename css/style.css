@@ -1,13 +1,17 @@
 body{
 	margin: 0;
 
-	font-family: "Roboto", sans-serif;
+	font-family: "Roboto", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: normal;
 	color: #ffffff;
 
 	background-color: #849d8f;	
+}
+
+p{
+	margin:0;
 }
 
 a{
@@ -57,7 +61,6 @@ a{
 
 .about h3{
 	font-size: 24px;
-	font-family: "Roboto";
 	font-weight: 500px;
 	line-height: 30px;
 	color: #323232;
@@ -70,7 +73,7 @@ a{
 
 	color: #323232; 
 
-	background-color: white;
+	background-color: #ffffff;
 	background-image: url("../img/back-news.jpg");
 	background-position: 0 0;
 	background-size: 560px 220px; 
@@ -82,64 +85,57 @@ a{
 	text-decoration: underline;
 }
 
-/*.mail{
+
+.mail{
 	width: 560px;
     height: 220px;
 
-	color: #5a5a5a;
+    color: #5a5a5a;
 
-	background-color: #f8f7f4;
-
-	border: 6px solid white;
-	border-image-slice: 5% 1%;
-	border-radius: 10px;
-	border-image-source: url("../img/bg-post.svg");
-	/*background-image: url("../img/bg-post.svg"); */
-
-/*.mail{
-	width: 560px;
-    height: 220px;
-    padding-top: 5px;
+    font-size: 16px;
+    line-height: 22px;
 
     background-image: url("../img/bg-post.svg");
-}*/
-/*НЕ ПОНИМАЮ КАК ЭТО СДЕЛАТЬ!!!!!*/
-
-
-/*.button-red{
-	width: 129px;
-  height: 44px;
-  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
-  background-image: linear-gradient(to top, var(--tomato), #f26843);
 }
-*/
+
 .mail-inner{
 	width: 549px;
     height: 211px;
-    border-radius: 10px;
+    margin-top: 5px;
     margin-left: 5px;
 
-	color: #5a5a5a;
+    position: absolute;
+    border-radius: 10px;
 
 	background-color: #f8f7f4;
 }
-/*СДЕЛАТЬ БОРДЕР КАРТИНКОЙ ИЛИ ФОНОМ И КАК*/
+
+.button-red{
+	width: 129px;
+	height: 44px;
+
+	font:inherit;
+	text-align: center;
+	color: #ffffff;
+
+	box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+	background-color: #e74a35;
+	border-radius: 25px;
+	border: none;
+}
+
 
 
 
 
 .information a{
-	color: white ;
+	color: #ffffff ;
 	list-style: none;
 	font-size: 13px;
 	line-height: 18px;
 }
 
-/*.information{
-	font-size: 13px;
-	line-height: 18px;
 
-}*/
 
 .academy-inner a{
 	text-decoration: none;
@@ -148,7 +144,10 @@ a{
 }
 
 
+
+
 /*CATALOG*/
+
 .working{
 	font-size: 14px;
 	line-height: 16px;
@@ -170,11 +169,14 @@ a{
 }
 
 .ice-mame{
-	color: #ffffff
+	color: #ffffff;
 
 	font-size:16px;
 	font-weight: 500;
 	line-height: 22px;
+
+	list-style: none;
+
 }
 
 .ice-name a{
@@ -182,6 +184,51 @@ a{
 	color: #ffffff;
 }
 
+
+.button-red-catalog{
+	width: 200px;
+	height: 44px;
+
+	font:inherit;
+	text-align: center;
+	color: #ffffff;
+
+	font-size: 18px
+	line-height: 22px;
+
+	box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+	background-color: #e74a35;
+	border-radius: 25px;
+	border: none;
+}
+
+.ice-img-price{
+	width: 267px;
+	height: 267px;
+	position: relative;
+
+}
+
+.ice-img-price img{
+	border-radius: 50%;
+}
+
+
+.ice-img-price p{
+	position: absolute; 
+	left: 0;
+	bottom: 19px;
+
+	font-size: 45px;
+    font-weight: bold;
+    text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
+
+}
+
+.ice-img-price span{
+	font-size: 30px;
+	text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
+}
 
 
 
