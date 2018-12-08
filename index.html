@@ -3,14 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
-  	<header>
-  		<nav>
-  			<a href="#">
+  	<header class="main-header">
+  		<nav class="main-navigation">
+  			<a class="main-header-logo" href="#">
   				<img src="img/logo.svg" width="154" height="64" alt="Логотип сайта «Глейси»">
   			</a>
-  			<ul>
+  			<ul class="site-navigation">
   				<li>
             <a href="catalog.html">Каталог</a>
             <ul>
@@ -25,9 +28,9 @@
   				<li><a href="info.html">О Компании</a></li>
   			</ul>
   		</nav>
-  		<ul>
+  		<ul class="user-navigation">
   				<li>
-            <a><img src="img/loupe.svg" alt="Поиск"></a>
+            <a class="button"><img src="img/loupe.svg" alt="Поиск"></a>
             <section>
               <form>
                 <label class="visually-hidden" for="search-input">Поиск</label>
@@ -37,10 +40,11 @@
 
           </li>
   				<li>
-            <a href="#">
-              <img src="img/entrance.svg">
-              <span class="visually-hidden">Вход</span>
+            <a class="button" href="#">
+              <img src="img/entrance-white.svg">
+              Вход
             </a>
+
             <section>
               <form >
                 <p>
@@ -61,47 +65,51 @@
             </section>
           </li>
 
-  				<li><a href="cart.html"><img src="img/basket.svg" alt="Корзина">Пусто</a></li>
+  				<li><a class="button" href="cart.html"><img src="img/basket.svg" alt="Корзина">Пусто</a></li>
   			</ul>
   	</header>
-  	<main>
-  		<section>
+
+
+  	<main class="container">
+  		<section class="about">
   			<h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
-  			<ul>
+  			<ul class="about-gllacy">
   				<li><img src="img/ice-cream.svg">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
   				<li><img src="img/eco.svg">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
   				<li><img src="img/cow.svg">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
   				<li><img src="img/thermometer.svg">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
   			</ul>
   		</section>
-  		<article>
+  		<article class="blog-news">
   			<p>Новое в нашем блоге</p>
-  			<h3>
+  			<h3 class="news">
   				<a href="#">10 способов сервировки фрутовых щербетов к столу</a>
   			</h3>
   		</article>
-  		<div>
-  			<p>
-  				Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) 
-  			</p>
-  			<form>
-          <label class="visually-hidden" for="user-email"></label>  
-            <input id="user-email" type="email" name="user-email" placeholder="Электронная почта">
-          <button class="button" type="submit">Отправить</button> 
-        </form>
+  		<div class="mail">
+        <div class="mail-inner">
+    			<p >
+    				Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) 
+    			</p>
+    			<form>
+            <label class="visually-hidden" for="user-email"></label>  
+              <input id="user-email" type="email" name="user-email" placeholder="Электронная почта">
+            <button class="button-red" type="submit">Отправить</button> 
+          </form>
+         </div> 
   		</div>
   	</main>
 
 
-  	<footer>
+  	<footer class="main-footer">
   		<ul>
-  			<li><a href="https://twitter.com"><img src="img/twitter.svg" alt="Twitter"></a></li>
-  			<li><a href="https://instagram.com"><img src="img/instagram.svg" alt="Instagram"></a></li>
-  			<li><a href="https://facebook.com"><img src="img/fb.svg" alt="Facebook"></a></li>
+  			<li><a class="social-buttton" href="https://twitter.com"><img src="img/twitter.svg" alt="Twitter"></a></li>
+  			<li><a class="social-buttton" href="https://instagram.com"><img src="img/instagram.svg" alt="Instagram"></a></li>
+  			<li><a class="social-buttton" href="https://facebook.com"><img src="img/fb.svg" alt="Facebook"></a></li>
   			<li><a href="https://vk.com"><img src="img/vk.svg" alt="Vkontakte"></a></li>
   		</ul>
   		<section>
-  			<ul>
+  			<ul class="information">
   				<li><a href="#"><img src="img/heart.svg"><b>Для поставщиков</b></a></li>
   				<li><a href="#">О производстве</a></li>
   				<li><a href="#">Наши документы</a></li>
@@ -109,11 +117,11 @@
   			</ul>
   		</section>
   		<section>
-  			<p>
+  			<p class="academy-site">
   				<a href="https://htmlacademy.ru">
   				<img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Академия"></a>
   			</p>
-  			<p>
+  			<p class="academy-inner">
   				Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2017
   			</p>
   		</section>

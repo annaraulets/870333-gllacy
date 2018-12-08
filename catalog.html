@@ -3,22 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
-  	<header>
-  		<nav>
-  			<a href="index.html">
+  	<header class="main-header">
+  		<nav class="main-navigation">
+  			<a class="main-header-logo" href="index.html">
   				<img src="img/logo.svg" alt="Логотип сайта «Глейси»">
   			</a>
-  			<ul>
+  			<ul class="site-navigation">
   				<li>Каталог</li>
   				<li><a href="delivery.html">Доставка и оплата</a></li>
   				<li><a href="info.html">О Компании</a></li>
   			</ul>
-     </nav>
-  			<ul>
-  				<li><a href="search"><img src="img/loupe.svg" alt="Поиск"></a></li>
-  				<li><a href="login.html"><img src="img/entrance.svg">Вход</a></li>
+      </nav>
+  			<ul class="user-navigation">
+  				<li><a class="button" href="search"><img src="img/loupe.svg" alt="Поиск"></a></li>
+  				<li><a class="button" href="login.html"><img src="img/entrance-white.svg">Вход</a></li>
   				<li>
             <button><img src="img/basket-red.svg" alt="Корзина">2 товара</button>
             <section>
@@ -59,17 +62,17 @@
             </section>
           </li>
   			</ul>
-      <div>
+      <div class="working">
         <p>
           с 10 до 20, ежедневно<br>
-          <b> 8 812 450 2525 </b>
+          <b class="working-telephone"> 8 812 450-25-25 </b>
         </p>
       </div>
   	</header>
 
 
     <main>
-      <nav>
+      <nav class="inner-navigation">
         <ul>
           <li><a href="#">Главная</a></li>
           <li><a href="catalog.html">Каталог</a></li>
@@ -79,7 +82,7 @@
       <h1>Сливочное мороженное</h1>
 
       <section>
-        <ul>
+        <ul class="ice-name">
           <li>
             <img src="img/ice1.jpg">
             <p>310₽<span>/кг</span></p>
@@ -114,36 +117,43 @@
             <img src="img/ice6.jpg">
             <p>410₽<span>/кг</span></p>
             <p><a href="#">Сливочно-черничное с цельными ягодами черники</a></p>
+            <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li>
             <img src="img/ice7.jpg">
             <p>375₽<span>/кг</span></p>
             <p><a href="#">Сливочно-лимонное с карамельной присыпкой</a></p>
+            <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li>
             <img src="img/ice8.jpg">
             <p>320₽<span>/кг</span></p>
             <p><a href="#">Сливочное с шоколадной стружкой</a></p>
+            <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li>
             <img src="img/ice9.jpg">
             <p>440₽<span>/кг</span></p>
             <p><a href="#">Сливочно-ванильное с кусочками шоколада</a></p>
+            <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li>
             <img src="img/ice10.jpg">
             <p>435₽<span>/кг</span></p>
             <p><a href="#">Сливочноe с ментоловым сиропом</a></p>
+            <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li>
             <img src="img/ice11.jpg">
             <p>355₽<span>/кг</span></p>
             <p><a href="#">Сливочное с кусочками черного шоколада</a></p>
+            <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li>
             <img src="img/ice12.jpg">
             <p>420₽<span>/кг</span></p>
             <p><a href="#">Сливочное с мятным сиропом</a></p>
+            <a class="button" href="#">Быстрый просмотр</a>
           </li>
         </ul>
       </section>
@@ -156,15 +166,15 @@
     </main>
 
 
-    <footer>
+    <footer class="main-footer">
       <ul>
-        <li><a href="https://twitter.com"><img src="img/twitter.svg" alt="Twitter"></a></li>
-        <li><a href="https://instagram.com"><img src="img/instagram.svg" alt="Instagram"></a></li>
-        <li><a href="https://facebook.com"><img src="img/fb.svg" alt="Facebook"></a></li>
+        <li><a class="social-buttton" href="https://twitter.com"><img src="img/twitter.svg" alt="Twitter"></a></li>
+        <li><a class="social-buttton" href="https://instagram.com"><img src="img/instagram.svg" alt="Instagram"></a></li>
+        <li><a class="social-buttton" href="https://facebook.com"><img src="img/fb.svg" alt="Facebook"></a></li>
         <li><a href="https://vk.com"><img src="img/vk.svg" alt="Vkontakte"></a></li>
       </ul>
       <section>
-        <ul>
+        <ul class="information">
           <li><a href="#"><img src="img/heart.svg"><b>Для поставщиков</b></a></li>
           <li><a href="#">О производстве</a></li>
           <li><a href="#">Наши документы</a></li>
@@ -172,11 +182,11 @@
         </ul>
       </section>
       <section>
-        <p>
+        <p class="academy-site">
           <a href="https://htmlacademy.ru">
-          <img src="img/logo-htmlacademy.svg" width="108" height="39"></a>
+          <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Академия"></a>
         </p>
-        <p>
+        <p class="academy-inner">
           Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2017
         </p>
       </section>
