@@ -5,10 +5,10 @@
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
-  	<header class="main-header">
+  	<header class="main-header container">
   		<nav class="main-navigation">
   			<a class="main-header-logo" href="#">
   				<img src="img/logo.svg" width="154" height="64" alt="Логотип сайта «Глейси»">
@@ -16,7 +16,7 @@
   			<ul class="site-navigation">
   				<li>
             <a href="catalog.html">Каталог</a>
-            <ul>
+            <ul class="disable">
               <li><a href="#"><b>Новинки</b></a></li>
               <li><a href="#">Сливочные</a></li>
               <li><a href="#">Щербеты</a></li>
@@ -27,82 +27,88 @@
   				<li><a href="delivery.html">Доставка и оплата</a></li>
   				<li><a href="info.html">О Компании</a></li>
   			</ul>
-  		</nav>
-  		<ul class="user-navigation">
-  				<li>
-            <a class="button"><img src="img/loupe.svg" alt="Поиск"></a>
-            <section>
-              <form>
-                <label class="visually-hidden" for="search-input">Поиск</label>
-                  <input id="search-input" type="search" name="search-input" placeholder="Что ищем?">
-              </form>
-            </section>
+  		
+    		<ul class="user-navigation">
+    				<li>
+              <a class="button loupe"><img src="img/loupe.svg" alt="Поиск"></a>
+              <section class="disable">
+                <form>
+                  <label class="visually-hidden" for="search-input">Поиск</label>
+                    <input id="search-input" type="search" name="search-input" placeholder="Что ищем?">
+                </form>
+              </section>
+            </li>
+    				<li>
+              <a class="button" href="#">
+                <img src="img/entrance-white.svg">Вход
+              </a>
 
-          </li>
-  				<li>
-            <a class="button" href="#">
-              <img src="img/entrance-white.svg">
-              Вход
-            </a>
+              <section class="disable">
+                <form >
+                  <p>
+                    <label class="visually-hidden" for="login-email">Емейл для входа</label>
+                    <input id="login-email" type="email" name="login-email">
+                  </p>
+                  <p>
+                    <label class="visually-hidden" for="user-password">Пароль</label>
+                    <input id="user-password" type="password" name="user-password">
+                  </p>
+                  <button type="submit">Войти</button>
+                  <p>
+                    <a href="#">Забыли пароль?</a>
+                    <br>
+                    <a href="#">Новая регистрация</a>
+                  </p>
+                </form>
+              </section>
+            </li>
 
-            <section>
-              <form >
-                <p>
-                  <label class="visually-hidden" for="login-email">Емейл для входа</label>
-                  <input id="login-email" type="email" name="login-email">
-                </p>
-                <p>
-                  <label class="visually-hidden" for="user-password">Пароль</label>
-                  <input id="user-password" type="password" name="user-password">
-                </p>
-                <button type="submit">Войти</button>
-                <p>
-                  <a href="#">Забыли пароль?</a>
-                  <br>
-                  <a href="#">Новая регистрация</a>
-                </p>
-              </form>
-            </section>
-          </li>
-
-  				<li><a class="button" href="cart.html"><img src="img/basket.svg" alt="Корзина">Пусто</a></li>
-  			</ul>
+    				<li><a class="button" href="cart.html"><img src="img/basket.svg" alt="Корзина">Пусто</a></li>
+    			</ul>
+        </nav>
   	</header>
 
 
   	<main class="container">
   		<section class="about">
   			<h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
-  			<ul class="about-gllacy">
-  				<li><img src="img/ice-cream.svg">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-  				<li><img src="img/eco.svg">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
-  				<li><img src="img/cow.svg">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
-  				<li><img src="img/thermometer.svg">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
-  			</ul>
+  			<div class="about-gllacy">
+          <div class="about-gllacy-col">
+    				<p><img src="img/ice-cream.svg">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+    				<p><img src="img/eco.svg">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+          </div>
+          <div class="about-gllacy-col">
+    				<p><img src="img/cow.svg">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+    				<p><img src="img/thermometer.svg">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+          </div>
+  			</div>
   		</section>
-  		<article class="blog-news">
-  			<p>Новое в нашем блоге</p>
-  			<h3 class="news">
-  				<a href="#">10 способов сервировки фрутовых щербетов к столу</a>
-  			</h3>
-  		</article>
-  		<div class="mail">
-        <div class="mail-inner">
-    			<p >
-    				Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) 
-    			</p>
-    			<form>
-            <label class="visually-hidden" for="user-email"></label>  
-              <input id="user-email" type="email" name="user-email" placeholder="Электронная почта">
-            <button class="button-red" type="submit">Отправить</button> 
-          </form>
-        </div> 
-  		</div>
+
+      <div class="mail-news-wrapper">
+        <article class="news-inner">
+    		  <p>Новое в нашем блоге</p>
+    			<h3 class="news">
+    				<a href="#">10 способов сервировки фрутовых щербетов к столу</a>
+    			</h3>
+    		</article>
+    		<div class="mail">
+          <div class="mail-inner">
+      			<p >
+      				Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) 
+      			</p>
+      			<form>
+              <label class="visually-hidden" for="user-email"></label>  
+                <input id="user-email" type="email" name="user-email" placeholder="Электронная почта">
+              <button class="button-red" type="submit">Отправить</button> 
+            </form>
+          </div> 
+    		</div>
+      </div>
   	</main>
 
 
-  	<footer class="main-footer">
-  		<ul>
+  	<footer class="main-footer container">
+  		<ul class="social">
   			<li><a class="social-buttton" href="https://twitter.com"><img src="img/twitter.svg" alt="Twitter"></a></li>
   			<li><a class="social-buttton" href="https://instagram.com"><img src="img/instagram.svg" alt="Instagram"></a></li>
   			<li><a class="social-buttton" href="https://facebook.com"><img src="img/fb.svg" alt="Facebook"></a></li>
@@ -116,12 +122,12 @@
   				<li><a href="#">Экологические страндарты</a></li>
   			</ul>
   		</section>
-  		<section>
-  			<p class="academy-site">
+  		<section class="academy">
+  			<p class="academy-logo">
   				<a href="https://htmlacademy.ru">
   				<img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Академия"></a>
   			</p>
-  			<p class="academy-inner">
+  			<p class="academy-site">
   				Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2017
   			</p>
   		</section>
@@ -129,7 +135,7 @@
 
 
 
-    <section class="modal">
+    <section class="modal disable">
       <h3>Мы вам обязательно ответим!</h3>
       <form action="https://echo.htmlacademy.ru" method="post">
         <p>
