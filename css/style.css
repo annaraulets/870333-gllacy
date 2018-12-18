@@ -268,6 +268,7 @@ a{
 	border: none;
 }
 
+
 .button:hover {
   background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
@@ -293,7 +294,7 @@ a{
 
 
 
-.button-red-catalog{
+.button-red{
 	width: 200px;
 	height: 44px;
 
@@ -352,9 +353,6 @@ a{
 	padding-left: 15px;
 }
 
-.loupe-wrapper:hover .search-popup{
-	display: block;
-}
 
 .user-navigation > li > a{
 	display: inline-block;
@@ -405,16 +403,50 @@ a{
 
 .entrance-popup{
 	position: absolute;
-	display: inline-block;
-	width: 245px;
-	height: 214px;
-	top: 35px;
-	left: -184px;
+	display: none;
+	width: 240px;
+	height: 195px;
+	top: 36px;
+	left: -180px;
 	background-color: #f8f7f4;
 	padding: 20px 17px 0 19px;
 	border-radius: 5px;
 	box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
+
+.entrance-popup input{
+	border-radius: 5px;
+	width: 223px;
+	height: 40px;
+	border: 1px solid #d3d3d2;
+	color: #d3d3d2;
+	font-size: 14px;
+	padding-left: 13px;
+	margin-bottom: 20px;
+	color: #999999;
+	opacity: 0.6;
+}
+
+.entrance-popup a{
+	font-size: 13px;
+	color: #323232;
+	text-decoration: underline;
+	text-align: left;
+	opacity: 0.7;
+}
+
+.help-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.button-submit{
+	padding: 0 25px;
+	font-size: 18px;
+	border-radius: 25px;
+}
+
 
 
 .user-navigation .basket{
@@ -434,16 +466,25 @@ a{
 }
 
 .user-navigation > li > a:hover,
-.loupe-wrapper:hover > a{
+.loupe-wrapper:hover > a,
+.entrance-wrapper:hover > a{
 	background-color: #ffffff;
 	color: #323232;
 }
+
+.loupe-wrapper:hover .search-popup{
+	display: block;
+}
+.entrance-wrapper:hover .entrance-popup{
+	display: block;
+}
+
 
 .loupe-wrapper:hover .loupe::before{
 	background-image: url(../img/loupe-black.svg);
 }
 
-.entrance:hover::before{
+.entrance-wrapper:hover .entrance::before{
 	background-image: url(../img/entrance.svg);
 }
 
