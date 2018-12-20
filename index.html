@@ -55,7 +55,7 @@
                         <input id="user-password" type="password" name="user-password" placeholder="Пароль">
                       </p>
                       <div class="help-container">
-                        <button class="button button-submit" type="submit">Войти</button>
+                        <button class="button button-entrance" type="submit">Войти</button>
                         <p>
                           <a href="#">Забыли пароль?</a>
                           <br>
@@ -167,24 +167,28 @@
       	</footer>
 
 
+        <div class="modal-container disable">
+          <section class="modal">
+            <h3>Мы обязательно вам ответим!</h3>
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <label class="visually-hidden" for="user-name"></label>
+                <input id="user-name" type="text" name="name" placeholder="Как вас зовут?">
+              </p>
+              <p>
+                <label class="visually-hidden" for="user-email"></label>
+                <input id="user-email" type="email" name="user-email" placeholder="Ваша почта для ответа?">
+              </p>
+              <p>
+                <textarea name="comment" id="comment-field" rows="10" placeholder="Напишите что-нибудь..."></textarea>
+              </p>
+              <div class="button-box">
+                <button class="button button-submit" type="submit">Отправить</button>
+              <div>
+            </form>
+          </section>
+        </div>
 
-        <section class="modal disable">
-          <h3>Мы вам обязательно ответим!</h3>
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <p>
-              <label class="visually-hidden" for="user-name"></label>
-              <input id="user-name" type="text" name="name" placeholder="Как вас зовут?">
-            </p>
-            <p>
-              <label class="visually-hidden" for="user-email"></label>
-              <input id="user-email" type="email" name="user-email" placeholder="Ваша почта для ответа?">
-            </p>
-            <p>
-              <textarea name="comment" id="comment-field" rows="10" placeholder="Напишите что-нибудь..."></textarea>
-            </p>
-            <button type="submit">Отправить</button>
-          </form>
-        </section>
     </div>
   </body>
 </html>

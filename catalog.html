@@ -14,27 +14,58 @@
   				<img src="img/logo.svg" alt="Логотип сайта «Глейси»">
   			</a>
   			<ul class="site-navigation">
-  				<li>Каталог</li>
+  				<li class="active">Каталог</li>
   				<li><a href="delivery.html">Доставка и оплата</a></li>
   				<li><a href="info.html">О Компании</a></li>
   			</ul>
+
   			<ul class="user-navigation">
-  				<li><a class="button-menu loupe" href="search"><img src="img/loupe.svg" alt="Поиск"></a></li>
-  				<li><a class="button-menu" href="login.html"><img src="img/entrance-white.svg">Вход</a></li>
-  				<li>
-            <button class="button-menu"><img src="img/basket-red.svg" alt="Корзина">2 товара</button>
-            <section class="disable">
-              <table width="540" height="242">
+          <li class="loupe-wrapper">
+            <a class="loupe"></a>
+            <section class="search-popup">
+              <form>
+                <label class="visually-hidden" for="search-input">Поиск</label>
+                  <input id="search-input" type="search" name="search-input" placeholder="Что ищем?">
+              </form>
+            </section>
+          </li>
+  				<li class="entrance-wrapper">
+            <a class="entrance" href="#">Вход</a>
+            <section class="entrance-popup">
+              <form >
+                <p>
+                  <!-- <label class="visually-hidden" for="login-email">Емейл для входа</label> -->
+                  <input id="login-email" type="email" name="login-email" placeholder="Электронная почта">
+                </p>
+                <p>
+                  <!-- <label class="visually-hidden" for="user-password">Пароль</label> -->
+                  <input id="user-password" type="password" name="user-password" placeholder="Пароль">
+                </p>
+                <div class="help-container">
+                  <button class="button button-entrance" type="submit">Войти</button>
+                  <p>
+                    <a href="#">Забыли пароль?</a>
+                    <br>
+                    <a href="#">Новая регистрация</a>
+                  </p>
+                </div>
+              </form>
+            </section>
+          </li>
+          <li>
+            <button class="button-basket">2 товара</button>
+            <section class="basket-popup">
+              <table>
                 <tr>
                   <td>
-                    <button><span class="visually-hidden">Удалить</span>
-                      <img src="img/cross-big.svg">
+                    <button class="delete"><span class="visually-hidden">Удалить</span>
+                      <img src="img/cross-small.svg">
                     </button>
                   </td>
-                  <td>
+                  <td class="td-ice-img">
                     <img src="img/ice1.jpg" width="33" height="33" alt="Сливочное мороженное с апельсиновым джемом">
                   </td>
-                  <td>Пломбир с апельсиновым джемом</td>
+                  <td class="td-name">Пломбир с апельсиновым джемом</td>
                   <td>
                     1,5 кг x <span>200 руб.</span>
                   </td>
@@ -42,14 +73,14 @@
                 </tr>
                 <tr>
                   <td>
-                    <button><span class="visually-hidden">Удалить</span>
-                      <img src="img/cross-big.svg">
+                    <button class="delete"><span class="visually-hidden">Удалить</span>
+                      <img src="img/cross-small.svg">
                     </button>
                   </td>
-                  <td>
+                  <td class="td-ice-img">
                     <img src="img/ice3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
                   </td>
-                  <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td class="td-name">Клубничный пломбир с присыпкой из белого шоколада</td>
                   <td>
                     1,5 кг x <span>300 руб.</span>
                   </td>
@@ -57,7 +88,7 @@
                 </tr>
               </table>
               <p><b>Итого: 750 руб.</b></p>
-              <button type="submit">Оформить заказ</button>
+              <button class="button button-order" type="submit">Оформить заказ</button>
             </section>
           </li>
   			</ul>
