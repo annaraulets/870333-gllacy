@@ -192,6 +192,8 @@ a{
 	height: 32px;
 	line-height: 32px;
 	font-weight: 500;
+	text-decoration: underline;
+	text-decoration-color: rgba(255, 255, 255, 0.5);
 
 }
 
@@ -199,6 +201,7 @@ a{
 	color: #323232;
 	background-color: #f8f7f4;
 	border-radius: 50px;
+	text-decoration: none;
 }
 
 .sub-menu{
@@ -525,8 +528,9 @@ a{
 }
 
 .news-inner{
-	width: 560px;
-    height: 220px;
+	width: 540px;
+    padding-top: 26px;
+    padding-left: 20px;
 
 	color: #323232; 
 
@@ -538,9 +542,22 @@ a{
 	border-radius: 15px;
 }
 
+.news-inner p{
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+.news-inner h3{
+	margin: 0;
+}
+
 .news a{
 	color: #323232;
 	text-decoration: underline;
+	font-size: 24px;
+	line-height: 30px;
 }
 
 
@@ -557,16 +574,34 @@ a{
 }
 
 .mail-inner{
-	width: 549px;
-    height: 211px;
+	width: 509px;
     margin-top: 5px;
     margin-left: 5px;
+    padding: 30px 20px 35px 20px;
 
     position: absolute;
     border-radius: 10px;
 
 	background-color: #f8f7f4;
 }
+
+.mail-inner p{
+	font-size: 16px;
+	line-height: 22px;
+	color: #5a5a5a;
+	margin-bottom: 35px;
+}
+
+.mail-form input{
+	width: 330px;
+	height: 40px;
+	padding: 0 15px;
+	margin-right: 10px;
+	border-radius: 5px;
+	border: 1px solid #d3d3d2;
+	color: #d3d3d2;
+}
+
 
 
 .social,
@@ -776,13 +811,13 @@ a{
 	left: 35px;
 }
 
-.ice-name li:hover .button{
+.ice-name.ice-catalog li:hover .button{
 	display: block;
 }
-.ice-name li:hover::before{
+.ice-name.ice-catalog li:hover::before{
 	display: block;
 }
-.ice-name li:hover{
+.ice-name.ice-catalog li:hover{
 	z-index: 1000;
 }
 
@@ -847,6 +882,18 @@ a{
 
 }
 
+.ice-img-price::after{
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 61px;
+	height: 61px;
+	background-color: #ffffff;
+	border-radius: 50%;
+	background-image: url(../img/hit.svg);
+}
+
 .ice-img-price img{
 	border-radius: 50%;
 }
@@ -871,7 +918,7 @@ a{
 
 
 
-             /*-----Зафлексить флексы----*/
+             /*-----ФОЕКСИМ ИНДЕКС----*/
 
 html,
 body{
@@ -938,13 +985,7 @@ body{
 	margin-bottom: 40px;
 }
 
-.mail{
-	
-}
 
-.news{
-
-}
 
 .main-footer{
 	display: flex;
@@ -967,6 +1008,53 @@ body{
 	margin: 0;
 }
 
+.index-promo{
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 0;
+}
+
+.index-promo-left{
+	width: 510px;
+	background-color: #bc1a63;
+	background-image: url(../img/berry.jpg);
+	background-size: 560px 230px;
+	border-radius: 15px;
+	background-repeat: no-repeat;
+	padding: 20px 30px 24px 20px;
+}
+
+.index-promo-right{
+	width: 510px;
+	background-color: #8b4513;
+	background-image: url(../img/choko.jpg);
+	border-radius: 15px;
+	background-repeat: no-repeat;
+	background-size: 560px 230px;
+	padding: 20px 30px 24px 20px;
+}
+
+.index-promo-left h2,
+.index-promo-right h2{
+	margin: 0;
+
+	font-size: 35px;
+	line-height: 41px;
+}
+
+.index-promo-left p,
+.index-promo-right p{
+	margin-top: 20px;
+	margin-bottom: 35px;
+
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.index-promo-wrapper{
+	display: flex;
+	justify-content: flex-end;
+}
 
 /*-----ФЛЕКСИМ КАТАЛОГ------*/
 
