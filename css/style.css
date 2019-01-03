@@ -174,6 +174,12 @@ a{
 	padding: 0;
 }
 
+.site-navigation > li > .active{
+	background-color: #d07058;
+	border-radius: 50px;
+	text-decoration: none;
+}
+
 .site-navigation > li{
 	position: relative;
 	margin-right: 0;
@@ -197,7 +203,7 @@ a{
 
 }
 
-.site-navigation > li:hover > a{
+.site-navigation > li:hover > a:not(.active){
 	color: #323232;
 	background-color: #f8f7f4;
 	border-radius: 50px;
@@ -707,20 +713,31 @@ a{
 	top: 35px;
 	right: 0;
 	width: 500px;
-	height: 200px;
 	background-color: #f8f7f4;
 	border-radius: 5px;
 	color: #323232;
 	font-size: 13px;
 	line-height: 16px;
-	padding: 20px 15px 21px 16px;
+	margin: 0;
+	padding: 0 15px 21px 16px;
 	box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+	z-index: 2000;
 }
 .basket-popup table{
 	width: 100%;
 	border-bottom: 1px solid #cacac7;
-	padding-bottom: 24px;
-	margin-bottom: 16px;
+	/*padding-bottom: 24px;
+	margin-bottom: 16px;*/
+	border-collapse: separate;
+	border-spacing: 0 15px;
+}
+
+.basket-popup-table p{
+	margin: 0;
+}
+
+.basket-popup-table{
+	margin-bottom: 17px;
 }
 
 .delete{
@@ -735,6 +752,11 @@ a{
 	margin-bottom: 20px;
 	vertical-align: top;
 }
+.price-box p{
+	font-size: 15px;
+	line-height: 18px;
+	margin-bottom: 17px; 
+}
 
 
 .button-order{
@@ -746,24 +768,20 @@ a{
 .td-ice-img img{
 	display: block;
 	border-radius: 50%;
-	margin-right: 14px;
 	width: 33px;
 }
 
 .td-name p{
 	width: 217px;
-	margin-right: 25px;
 }
 .td-weight{
 	width: 98px;
-	margin-right: 29px;
 }
 .td-weight span{
 	color: #999999;
 }
 
 .price-box{
-
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
@@ -811,13 +829,13 @@ a{
 	left: 35px;
 }
 
-.ice-name.ice-catalog li:hover .button{
+.ice-name li:hover .button{
 	display: block;
 }
-.ice-name.ice-catalog li:hover::before{
+.ice-name li:hover::before{
 	display: block;
 }
-.ice-name.ice-catalog li:hover{
+.ice-name li:hover{
 	z-index: 1000;
 }
 
@@ -832,6 +850,7 @@ a{
 	left: -14px;
 	top: -6px;
 	border-radius: 5px;
+	box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 
@@ -882,7 +901,7 @@ a{
 
 }
 
-.ice-img-price::after{
+.ice-img-price.ice-index::after{
 	position: absolute;
 	content: "";
 	top: 0;
