@@ -902,15 +902,121 @@ a{
 	line-height: 18px;
 }
 
-/*.filers-section-top{ хер знает че там как
+.filters-section{
+	margin-bottom: 40px;
+}
+
+.filters-section-top{
 	display: flex;
 	flex-direction: row;
-	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.filters-section-bottom{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.custom-select{
+	position: relative;
+	width: 194px;
+	background-color: rgb(225, 255, 255, 0.3);
+	background-image: url(../img/icon-down-dir.png);
+	background-size: 11px 10px;
+	background-repeat: no-repeat;
+	background-position: 168px 14px;
+	border: none;
+	color: #ffffff;
+	border-radius: 25px;
+	padding: 10px 10px 9px 15px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+ 	appearance: none;
+}
+
+.custom-select:hover{
+	color: #323232;
+	background-image: url(../img/icon-down-dir.svg);
+	background-color: #ffffff;
+}
+
+/*.custom-select::before{
+	position: absolute;
+	top: 0;
+	left: -40px;
+	background-image: url(../img/select-arrow.svg);
+	background-size: 10px 10px;
+	width: 12px;
+	height: 12px;
 }*/
+
+.switch-wrapper{
+	margin-top: 5px;
+	position: relative;
+	background-color: rgb(225, 255, 255, 0.3);
+	width: 220px;
+	min-height: 37px;
+	border-radius: 25px;
+}
+
+.switch-one{
+	position: relative;
+}
+
+.switch-one::before{
+	content: "";
+	position: absolute;
+	top: 17px;
+	left: 22px;
+	width: 176px;
+	height: 4px;
+	background-color: rgb(225, 255, 255, 0.6);
+}
+
+.switch-one::after{
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 36px;
+	width: 22px;
+	height: 22px;
+	background: url(../img/filter-button.svg);
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+}
+.switch-two{
+	position: relative;
+}
+.switch-two::before{
+	content: "";
+	position: absolute;
+	top: 17px;
+	left: 48px;
+	width: 90px;
+	height: 4px;
+	background-color: #ffffff;
+}
+.switch-two::after{
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 130px;
+	width: 22px;
+	height: 22px;
+	background: url(../img/filter-button.svg);
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+}
+
 
 .filter-option{
 	padding-left: 35px; 
 	margin: 0 20px 0 0;
+}
+
+.filter-option:last-child{
+	margin-right: 0;
 }
 
 .box-fat ul{
@@ -930,6 +1036,7 @@ a{
 	line-height: 18px;
 	margin-right: 18px;
 }
+
 
 .box-fat input[type="radio"] + label::before{
 	content: "";
@@ -975,7 +1082,7 @@ a{
 	padding: 10px 15px;
 	margin: 0;
 	background-color: rgb(225, 255, 255, 0.3);
-	max-width: 710px;
+	max-width: 700px;
 	border-radius: 25px;
 }
 
@@ -1010,13 +1117,24 @@ a{
 	left: -30px;
 	top: -1px;*/
 }
+.box-fat input[type="radio"]:focus + label{
+	outline: rgb(77,166,255) auto 5px;
+}
+
+.box-filters input[type="checkbox"]:focus + label{
+	outline: rgb(77,166,255) auto 5px;
+}
 
 .button-select{
-	background-color: rgba(255, 255, 255, 0.3);
+	margin-top: 21px;
+	height: 38px;
+	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 20px;
 	border: 1px solid #ffffff;
 	color: #ffffff;
-	padding: 9px 30px;
+	padding: 10px 30px;
+	/*font-size: 16px;
+	line-height: 18px;*/
 }
 
 .button-select:hover{
@@ -1026,10 +1144,14 @@ a{
 
 
 
+.ice-all ul{
+	margin-bottom: 70px;
+}
 
 .ice-text{
 	text-align: center;
 }
+
 
 .ice-name li{
 	position: relative;
@@ -1151,6 +1273,79 @@ a{
 }
 
 
+.pagination-list{
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: flex-end;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.pagination-item{
+	margin-right: 0;
+}
+
+.pagination-item:last-child{
+	margin-right: 0;
+}
+
+.pagination-item a {
+	display: block;
+	padding: 3px 10px;
+	text-align: center;
+}
+
+.pagination-item-current{
+	position: relative;
+	/*display: flex;
+	align-items: center;*/
+	background-color: #ffffff;
+	border-radius: 50%;
+	/*width: 26px;
+	height: 26px;*/
+	text-align: center;
+}
+
+.pagination-item-current::before{
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: -15px;
+	background-image: url(../img/icon-right-small.svg);
+	background-size: 10px 10px;
+	width: 10px;
+	height: 10px;
+	transform: rotate(180deg);
+}
+
+.pagination-item-current a{
+	color: #323232;
+}
+
+.pagination-item-current::after{
+	content: "";
+	position: absolute;
+	top: 8px;
+	left: 155px;
+	background-image: url(../img/icon-right-small.svg);
+	background-size: 10px 10px;
+	width: 10px;
+	height: 10px;
+}
+
+.pagination-list li:hover{
+	background: rgba(255, 255, 255, 0.3);
+	border-radius: 50%;
+}
+
+.pagination-list > li > a:hover{
+	color: #323232;
+}
+
+
 
 
              /*-----ФОЕКСИМ ИНДЕКС----*/
@@ -1158,7 +1353,7 @@ a{
 html,
 body{
 	min-width: 1200px;
-	min-height: 2416px;
+	min-height: 1650px;
 }
 
 .container{
@@ -1228,6 +1423,7 @@ body{
 	align-items: center; 
 	padding-top: 10px;
 	margin-bottom: 20px;
+	border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .social{

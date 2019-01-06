@@ -120,8 +120,8 @@
           <div class="filters-section-top">
             <fieldset>
               <legend>Сортировка:</legend>
-              <div class="custom-select">
-                <select name="sorting">
+              <div class="custom-select-wrapper">
+                <select class="custom-select" name="sorting">
                   <option value="popular">по популярности</option>
                   <option value="cheap">сначала недорогие</option>
                   <option value="expensive">сначала дорогие</option>
@@ -131,9 +131,9 @@
             </fieldset>
             <div class="box-switch">
               <legend>Цена: 100 руб. – 500 руб.</legend>
-              <div>
-                <span></span>
-                <span></span>
+              <div class="switch-wrapper">
+                <span class="switch-one"></span>
+                <span class="switch-two"></span>
               </div>
             </div>
             <fieldset class="box-fat">
@@ -295,43 +295,50 @@
             <a class="button button-catalog" href="#">Быстрый просмотр</a>
           </li>
         </ul>
+
+        <div class="catalog-pagination">
+          <ul class="pagination-list">
+            <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+            <li class="pagination-item"><a href="#">2</a></li>
+            <li class="pagination-item"><a href="#">3</a></li>
+            <li class="pagination-item"><a href="#">4</a></li>
+            <li class="pagination-item"><a href="#">5</a></li>
+          </ul>
+
+          
+        </div>
       </section>
 
       
-
-
-
-
     </main>
 
 
 
-        <footer class="main-footer container">
-          <ul class="social">
-            <li><a class="social-buttton" href="https://twitter.com"><img src="img/twitter.svg" alt="Twitter"></a></li>
-            <li><a class="social-buttton" href="https://instagram.com"><img src="img/instagram.svg" alt="Instagram"></a></li>
-            <li><a class="social-buttton" href="https://facebook.com"><img src="img/fb.svg" alt="Facebook"></a></li>
-            <li><a class="social-buttton" href="https://vk.com"><img src="img/vk.svg" alt="Vkontakte"></a></li>
-          </ul>
-          <section class="information">
-            <div class="information-col">
-              <p><img src="img/heart.svg" alt="Иконка-сердечко"><a href="#"><b>Для поставщиков</b></a></p>
-              <p><a href="#">О производстве</a></p>
-            </div>
-            <div class="information-col">
-              <p><a href="#">Наши документы</a></p>
-              <p><a href="#">Экологические страндарты</a></p>
-            </div>
-          </section>
-          <section class="academy">
-            <p class="academy-logo">
-              <a href="https://htmlacademy.ru">
-              <img src="img/logo-htmlacademy.svg" width="105" height="38" alt="Логотип HTML Академия"></a>
-            </p>
-            <p class="academy-site">
-              Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2017
-            </p>
-          </section>
+
+    <footer class="main-footer container">
+      <ul class="social">
+        <li><a class="social-button" href="https://twitter.com"><img src="img/twitter.svg" alt="Twitter"></a></li>
+        <li><a class="social-button" href="https://instagram.com"><img src="img/instagram.svg" alt="Instagram"></a></li>
+        <li><a class="social-button" href="https://facebook.com"><img src="img/fb.svg" alt="Facebook"></a></li>
+        <li><a class="social-button" href="https://vk.com"><img src="img/vk.svg" alt="Vkontakte"></a></li>
+      </ul>
+      <section>
+        <ul class="information">
+          <li><img src="img/heart.svg" alt="Иконка-сердечко"><a href="#"><b>Для поставщиков</b></a></li>
+          <li><a href="#">Наши документы</a></li>
+          <li><a href="#">О производстве</a></li>
+          <li><a href="#">Экологические страндарты</a></li>
+        </ul>
+      </section>
+      <section class="academy">
+        <p class="academy-logo">
+          <a href="https://htmlacademy.ru">
+          <img src="img/logo-htmlacademy.svg" width="105" height="38" alt="Логотип HTML Академия"></a>
+        </p>
+        <p class="academy-site">
+          Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2017
+        </p>
+      </section>
         </footer>
 
   </body>
