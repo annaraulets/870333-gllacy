@@ -966,7 +966,7 @@ a{
 }
 
 .filters-section{
-	margin-bottom: 35px;
+	margin-bottom: 38px;
 }
 
 .filters-section-top{
@@ -1088,20 +1088,31 @@ a{
 
 .box-fat ul{
 	display: flex;
-	padding: 10px 15px;
+	padding: 10px 17px 8px 15px;
 	margin: 0;
 	background-color: rgb(225, 255, 255, 0.3);
 	max-width: 400px;
 	border-radius: 25px;
-
 }
+
+.filter-option-radio + label{
+	margin-right: 0;
+}
+
+.box-fat > ul > li{
+	margin-right: 18px;
+}
+.box-fat > ul > li:last-child{
+	margin-right: 5px;
+}
+
 .box-fat input[type="radio"] + label{
 	position: relative;
 	padding: 5px 0 0 30px;
 	cursor: pointer;
 	font-size: 16px;
 	line-height: 18px;
-	margin-right: 18px;
+/*	margin-right: 18px;*/
 }
 
 
@@ -1160,7 +1171,7 @@ a{
 .box-filters input[type="checkbox"] + label::before{
 	content: "";
 	position: absolute;
-	left: -30px;
+	left: -32px;
 	top: 0;
 	background-image: url(../img/checkbox-off.svg);
 	background-size: 19px 19px;
@@ -1172,7 +1183,7 @@ a{
 .box-filters input[type="checkbox"]:checked + label::before{
 	background-image: url(../img/checkbox-on.svg);
 	background-size: 22px 22px;
-	left: -30px;
+	left: -32px;
 	top: -1px;
 	opacity: 1;
 }
@@ -1210,7 +1221,7 @@ a{
 
 
 .ice-all ul{
-	margin-bottom: 70px;
+	margin-bottom: 48px;
 }
 
 .ice-text{
@@ -1272,6 +1283,10 @@ a{
 	color: #ffffff;
 
 	text-align: right;
+}
+
+.working-index p{
+	margin-bottom: 5px;
 }
 
 .working{
@@ -1353,6 +1368,10 @@ a{
 	text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
 }
 
+.catalog-pagination{
+	margin-bottom: 30px;
+}
+
 
 .pagination-list{
 	position: relative;
@@ -1361,12 +1380,12 @@ a{
 	flex-direction: row;
 	justify-content: flex-end;
 	padding: 0;
-	margin: 0;
+	margin-right: 25px;
 	list-style: none;
 }
 
 .pagination-item{
-	margin-right: 0;
+	margin-right: 5px;
 }
 
 .pagination-item:last-child{
@@ -1375,31 +1394,28 @@ a{
 
 .pagination-item a {
 	display: block;
-	padding: 3px 10px;
+	padding: 1px 7px;
 	text-align: center;
 }
 
 .pagination-item-current{
 	position: relative;
-	/*display: flex;
-	align-items: center;*/
 	background-color: #ffffff;
 	border-radius: 50%;
-	/*width: 26px;
-	height: 26px;*/
 	text-align: center;
 }
 
 .pagination-item-current::before{
 	content: "";
 	position: absolute;
-	top: 10px;
-	left: -15px;
-	background-image: url(../img/icon-right-small.svg);
+	top: 7px;
+	left: -25px;
+	background-image: url(../img/icon-right-small.png);
 	background-size: 10px 10px;
 	width: 10px;
 	height: 10px;
 	transform: rotate(180deg);
+	opacity: 0.5;
 }
 
 .pagination-item-current a{
@@ -1409,9 +1425,9 @@ a{
 .pagination-item-current::after{
 	content: "";
 	position: absolute;
-	top: 8px;
+	top: 7px;
 	left: 155px;
-	background-image: url(../img/icon-right-small.svg);
+	background-image: url(../img/icon-right-small.png);
 	background-size: 10px 10px;
 	width: 10px;
 	height: 10px;
@@ -1478,7 +1494,7 @@ body{
 	display: flex;
 	justify-content: space-between;
 	align-items: center; 
-	padding-top: 10px;
+	padding-top: 20px;
 	margin-bottom: 20px;
 	border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
@@ -1488,17 +1504,17 @@ body{
 }
 .social{
 	display: flex;
-	margin: 0;
+	margin: 5px 0 0 0;
 	padding: 0;
 }
 
 .social > li{
-	margin-right: 15px;
+	margin-right: 12px;
 }
 
 .social-button img{
 	border-radius: 50%;
-	border: 2px solid rgba(255,255,255, 0.5);
+	border: 3px solid rgba(255,255,255, 0.5);
 }
 
 
@@ -1508,7 +1524,7 @@ body{
 	flex-direction: row;
 	font-size: 13px;
 	margin: 0;
-	width: 350px;
+	width: 340px;
 }
 
 .information li{
@@ -1540,23 +1556,23 @@ body{
 }
 
 .index-promo-left{
-	width: 510px;
+	width: 520px;
 	background-color: #bc1a63;
 	background-image: url(../img/berry.jpg);
 	background-size: 560px 230px;
 	border-radius: 15px;
 	background-repeat: no-repeat;
-	padding: 18px 30px 24px 18px;
+	padding: 18px 22px 24px 18px;
 }
 
 .index-promo-right{
-	width: 510px;
+	width: 520px;
 	background-color: #8b4513;
 	background-image: url(../img/choko.jpg);
 	border-radius: 15px;
 	background-repeat: no-repeat;
 	background-size: 560px 230px;
-	padding: 18px 30px 24px 18px;
+	padding: 18px 22px 24px 18px;
 }
 
 .index-promo-left h2,
@@ -1571,7 +1587,7 @@ body{
 .index-promo-left p,
 .index-promo-right p{
 	margin-top: 12px;
-	margin-bottom: 40px;
+	margin-bottom: 43px;
 
 	font-size: 18px;
 	line-height: 22px;
