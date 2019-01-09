@@ -60,7 +60,7 @@ a{
   position: relative;
   
   padding-top: 321px;
-  margin-bottom: 41px;
+  margin-bottom: 38px;
   
   text-align: center;
   color: #ffffff;
@@ -264,7 +264,7 @@ a{
 	height: 44px;
 	padding:0 19px;
 
-	font:inherit;
+	font-size: 18px;
 	font-weight: 500;
 	text-align: center;
 	line-height: 44px;
@@ -276,6 +276,12 @@ a{
 	border-radius: 50px;
 	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 	border: none;
+}
+
+.button-promo{
+	min-height: 46px;
+	padding: 0 24px;
+	line-height: 46px;
 }
 
 
@@ -505,23 +511,18 @@ a{
 	background-image: url(../img/basket-black.svg);
 }
 
-.about-gllacy{
-	list-style: none;
-	font-size: 16px;
-	line-height: 22px;
-	color: #323232;
-	text-align: left;
-}
 
 .about{
-	width: 1146px;
-    height: 306px;
+	min-width: 1146px;
+	height: auto;
+	box-sizing: border-box;
 	background-color: #ead7b6;
 	background-image: url("../img/about-bg.jpg");
 	background-size: 1146px 306px;
 	background-repeat: no-repeat;
 	border-radius: 15px;
 	margin-bottom: 40px;
+	padding: 25px 30px 5px 20px;
 
 }
  
@@ -531,14 +532,52 @@ a{
 	line-height: 30px;
 	color: #323232;
 	text-align: left;
-	padding-top: 30px;
-	padding-left: 21px;
-	margin: 0;
+	padding: 0;
+	margin: 0 0 20px 0;
 }
+.about-gllacy{
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 16px;
+	line-height: 22px;
+	color: #323232;
+	text-align: left;
+}
+
+.about-gllacy-col{
+	width: 535px;
+}
+
+.about-gllacy-col:last-child p{
+	padding-left: 63px;
+}
+
+.about-gllacy-col p{
+	position: relative;
+	padding-left: 58px;
+	margin-bottom: 21px;
+}
+
+.about-gllacy-col img{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+
+
+
+
 
 .news-inner{
 	width: 540px;
-    padding-top: 26px;
+    padding-top: 23px;
     padding-left: 20px;
 
 	color: #323232; 
@@ -555,11 +594,12 @@ a{
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: 500;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 
 .news-inner h3{
 	margin: 0;
+	width: 290px;
 }
 
 .news a{
@@ -598,14 +638,14 @@ a{
 	font-size: 16px;
 	line-height: 22px;
 	color: #5a5a5a;
-	margin-bottom: 35px;
+	margin-bottom: 33px;
 }
 
 .mail-form input{
-	width: 330px;
-	height: 40px;
+	width: 336px;
+	height: 42px;
 	padding: 0 15px;
-	margin-right: 10px;
+	margin-right: 5px;
 	border-radius: 5px;
 	border: 1px solid #d3d3d2;
 	color: #d3d3d2;
@@ -710,21 +750,36 @@ a{
 	position: absolute;
 	box-sizing: border-box;
 	top: 63px;
-	right: -60px;
+	right: -70px;
 	background-color: #ffffff;
 	width: 300px; 
 	color: #323232;
-	padding: 30px 25px 30px 25px;
+	padding: 26px 25px 30px 25px;
 	border-radius: 15px;
 	margin-bottom: 20px: 
 }
+
 
 .map-info p{
 	font-size: 14px;
 	line-height: 20px;
 	text-align: left;
-	margin-bottom: 25px; 
+	margin-bottom: 20px; 
 }
+
+.map-info p:first-of-type{
+	width: 150px;
+	margin: 0;
+}
+.map-info p:nth-of-type(3){
+	margin-bottom: 5px;
+}
+
+.map-info p:last-of-type{
+	width: 153px;
+	margin-bottom: 25px;
+}
+
 
 .map-info b{
 	font-size: 18px;
@@ -752,6 +807,7 @@ a{
 }
 .basket-popup{
 	position: absolute;
+	display: none;
 	top: 35px;
 	right: 0;
 	width: 500px;
@@ -765,6 +821,12 @@ a{
 	box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 	z-index: 2000;
 }
+
+.basket-wrapper:hover .basket-popup{
+	display: block;
+}
+
+
 .basket-popup table{
 	width: 100%;
 	border-bottom: 1px solid #cacac7;
@@ -831,25 +893,6 @@ a{
 }
 
 
-/*.button{
-	display: inline-block;
-	width: auto;
-	height: 44px;
-	padding:0 19px;
-
-	font:inherit;
-	font-weight: 500;
-	text-align: center;
-	line-height: 44px;
-	text-decoration: none;
-	color: #ffffff;
-
-	background: #f26843;
-	background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
-	border-radius: 50px;
-	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
-	border: none;
-}*/
 
 .button-catalog{
 	font-size: 18px;
@@ -860,16 +903,32 @@ a{
 	position: relative;
 }
 
+.breadcrumbs-nav > h1{
+	margin: 0 0 25px 0;
+	padding: 0;
+	font-size: 35px;
+	line-height: 41px;
+}
+
 .breadcrumbs{
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
+	position: absolute;
+	top: -25px;
 	margin: 0;
 	padding: 0;
-	position: absolute;
-	top: -40px;
 	font-size: 14px;
+	text-decoration: none;
+	color: #ffffff;
+	list-style: none;
 }
+
+/*.breadcrumbs {
+	text-decoration: none;
+	color: #ffffff;
+	list-style: none;
+}*/
 
 .breadcrumbs > li{
 	margin-right: 18px;
@@ -890,11 +949,15 @@ a{
 
 .filters fieldset{
 	border: none;
+	padding: 0;
+	margin: 0 14px 0 0;
 }
 
 .filters legend{
 	font-size: 14px;
 	line-height: 16px;
+	margin-bottom: 5px;
+	margin-left: 18px;
 }
 
 .filters ul{
@@ -903,13 +966,14 @@ a{
 }
 
 .filters-section{
-	margin-bottom: 40px;
+	margin-bottom: 35px;
 }
 
 .filters-section-top{
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
+	margin-bottom: 15px;
 }
 
 .filters-section-bottom{
@@ -950,9 +1014,12 @@ a{
 	width: 12px;
 	height: 12px;
 }*/
+.box-switch{
+	margin-right: 14px;
+}
 
 .switch-wrapper{
-	margin-top: 5px;
+	margin: 0;
 	position: relative;
 	background-color: rgb(225, 255, 255, 0.3);
 	width: 220px;
@@ -983,7 +1050,7 @@ a{
 	height: 22px;
 	background: url(../img/filter-button.svg);
 	background-repeat: no-repeat;
-	background-size: 20px 20px;
+	background-size: 20px 22px;
 }
 .switch-two{
 	position: relative;
@@ -1001,12 +1068,12 @@ a{
 	content: "";
 	position: absolute;
 	top: 10px;
-	left: 130px;
+	left: 135px;
 	width: 22px;
 	height: 22px;
 	background: url(../img/filter-button.svg);
 	background-repeat: no-repeat;
-	background-size: 20px 20px;
+	background-size: 20px 22px;
 }
 
 
@@ -1126,15 +1193,13 @@ a{
 }
 
 .button-select{
-	margin-top: 21px;
+	margin-top: 20px;
 	height: 38px;
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 20px;
 	border: 1px solid #ffffff;
 	color: #ffffff;
 	padding: 10px 30px;
-	/*font-size: 16px;
-	line-height: 18px;*/
 }
 
 .button-select:hover{
@@ -1150,6 +1215,10 @@ a{
 
 .ice-text{
 	text-align: center;
+}
+
+.ice-text a{
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 
@@ -1190,11 +1259,14 @@ a{
 
 
 
+.working-wrapper{
+	position: relative;
+}
 
-.working{
+.working-index{
 	position: absolute;
-	top: 80px;
-	right: 150px;
+	top: -50px;
+	right: 0px;
 	font-size: 14px;
 	line-height: 16px;
 	color: #ffffff;
@@ -1202,18 +1274,27 @@ a{
 	text-align: right;
 }
 
+.working{
+	position: absolute;
+	top: -47px;
+	right: 0;
+	font-size: 14px;
+	line-height: 16px;
+	color: #ffffff;
+
+	text-align: right;
+}
+
+.working p{
+	margin-bottom: 5px;
+}
+
 .working-telephone{
 	font-size: 22px;
 	line-height: 24px;
 	font-weight: bold;
-
 }
 
-.breadcrumbs {
-	text-decoration: none;
-	color: #ffffff;
-	list-style: none;
-}
 
 .ice-name{
 	color: #ffffff;
@@ -1236,7 +1317,6 @@ a{
 	width: 267px;
 	height: 267px;
 	position: relative;
-
 }
 
 .ice-img-price.ice-index::after{
@@ -1264,6 +1344,7 @@ a{
 	font-size: 45px;
     font-weight: bold;
     text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
+    cursor: pointer;
 
 }
 
@@ -1385,30 +1466,6 @@ body{
 	margin-top: 10px;
 }
 
-.about-gllacy{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	margin: 10px 20px;
-}
-
-.about-gllacy-col{
-	width: 540px;
-}
-
-.about-gllacy-col p{
-	position: relative;
-	padding-left: 58px;
-	padding-top: 16px;
-	margin-bottom: 10px;
-}
-
-.about-gllacy-col img{
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
 .mail-news-wrapper{
 	display: flex;
 	justify-content: space-between;
@@ -1426,6 +1483,9 @@ body{
 	border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.main-footer.main-footer-index{
+	border: none;
+}
 .social{
 	display: flex;
 	margin: 0;
@@ -1456,6 +1516,7 @@ body{
 	position: relative;
 }
 
+
 .information img{
 	position: absolute;
 	top: 5px;
@@ -1475,7 +1536,7 @@ body{
 .index-promo{
 	display: flex;
 	justify-content: space-between;
-	padding: 40px 0;
+	padding-bottom: 40px;
 }
 
 .index-promo-left{
@@ -1485,7 +1546,7 @@ body{
 	background-size: 560px 230px;
 	border-radius: 15px;
 	background-repeat: no-repeat;
-	padding: 20px 30px 24px 20px;
+	padding: 18px 30px 24px 18px;
 }
 
 .index-promo-right{
@@ -1495,7 +1556,7 @@ body{
 	border-radius: 15px;
 	background-repeat: no-repeat;
 	background-size: 560px 230px;
-	padding: 20px 30px 24px 20px;
+	padding: 18px 30px 24px 18px;
 }
 
 .index-promo-left h2,
@@ -1504,12 +1565,13 @@ body{
 
 	font-size: 35px;
 	line-height: 41px;
+	font-stretch: normal;
 }
 
 .index-promo-left p,
 .index-promo-right p{
-	margin-top: 20px;
-	margin-bottom: 35px;
+	margin-top: 12px;
+	margin-bottom: 40px;
 
 	font-size: 18px;
 	line-height: 22px;
@@ -1535,11 +1597,11 @@ body{
 
 .ice-name > li{
 	width: 267px;
-	margin-bottom: 40px;
+	margin-bottom: 37px;
 }
 
 .ice-name div{
-	margin-bottom: 17px;
+	margin-bottom: 13px;
 }
 
 
