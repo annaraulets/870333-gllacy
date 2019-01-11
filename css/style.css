@@ -98,6 +98,7 @@ a{
   font-size: 0;
 }
 
+
 .slider-controls label {
   display: inline-block;
   width: 17px;
@@ -111,6 +112,15 @@ a{
   border-radius: 50%;
   cursor: pointer;
 }
+
+.slider-controls label:hover{
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.slider-controls label:active{
+	background-color: #ffffff;
+}
+
 
 #product-1:checked ~ .site-wrapper {
   background-color: #849d8f;
@@ -227,6 +237,16 @@ a{
 	padding-bottom: 6px;
 	box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
+
+.sub-menu::before {
+	position: absolute;
+	content: '';
+	left: 0;
+	bottom: 100%;
+	width: 100%;
+	height: 10px;
+}
+
 
 .sub-menu li:first-child{
 	padding-top: 5px;
@@ -365,9 +385,10 @@ a{
 	height: 44px;
 	width: 296px;
 	border: 1px solid #d3d3d2;
-	color: #d3d3d2;
+	color: #000;
 	font-size: 14px;
 	padding-left: 15px;
+	font-weight: bold;
 }
 
 
@@ -443,8 +464,15 @@ a{
 	font-size: 14px;
 	padding-left: 13px;
 	margin-bottom: 20px;
+	color: #000;
+	font-weight: bold;
+}
+
+.entrance-popup input::placeholder,
+.search-popup input::placeholder{
+	font-weight: normal;
 	color: #999999;
-	opacity: 0.6;
+	opacity: 0.5;
 }
 
 .entrance-popup a{
@@ -751,17 +779,19 @@ a{
 }
 
 .container.section-map{
-	position: relative;
-	left: -20px;
 	padding: 0;
 	margin: 0;
+}
+
+.box-map-info{
+	position: relative;
 }
 
 .map-info{
 	position: absolute;
 	box-sizing: border-box;
-	top: 63px;
-	right: -20px;
+	top: -375px;
+	right: 55px;
 	background-color: #ffffff;
 	width: 300px; 
 	color: #323232;
@@ -995,7 +1025,7 @@ a{
 .custom-select{
 	position: relative;
 	width: 194px;
-	background-color: rgb(225, 255, 255, 0.3);
+	background-color: rgba(225, 255, 255, 0.3);
 	background-image: url(../img/icon-down-dir.png);
 	background-size: 11px 10px;
 	background-repeat: no-repeat;
@@ -1025,7 +1055,7 @@ a{
 .switch-wrapper{
 	margin: 0;
 	position: relative;
-	background-color: rgb(225, 255, 255, 0.3);
+	background-color: rgba(225, 255, 255, 0.3);
 	width: 220px;
 	min-height: 37px;
 	border-radius: 25px;
@@ -1033,6 +1063,7 @@ a{
 
 .switch-one{
 	position: relative;
+	display: block;
 }
 
 .switch-one::before{
@@ -1042,7 +1073,7 @@ a{
 	left: 22px;
 	width: 176px;
 	height: 4px;
-	background-color: rgb(225, 255, 255, 0.6);
+	background-color: rgba(225, 255, 255, 0.6);
 }
 
 .switch-one::after{
@@ -1058,6 +1089,7 @@ a{
 }
 .switch-two{
 	position: relative;
+	display: block;
 }
 .switch-two::before{
 	content: "";
@@ -1099,7 +1131,7 @@ a{
 	display: flex;
 	padding: 10px 17px 8px 15px;
 	margin: 0;
-	background-color: rgb(225, 255, 255, 0.3);
+	background-color: rgba(225, 255, 255, 0.3);
 	max-width: 400px;
 	border-radius: 25px;
 }
@@ -1121,13 +1153,11 @@ a{
 	cursor: pointer;
 	font-size: 16px;
 	line-height: 18px;
-/*	margin-right: 18px;*/
 }
 
 
 .box-fat input[type="radio"] + label::before{
 	content: "";
-	/*background-color: #f8f7f4;*/
 	border: 4px solid #ffffff;
 	width: 15px;
 	height: 15px;
@@ -1154,15 +1184,21 @@ a{
 	opacity: 1;
 }
 
-.box-fat input[type="radio"]:hover + label::before{
+.box-fat input[type="radio"] + label:not(:disabled):hover::before{
 	border: 4px solid #ffffff;
 	opacity: 1;
 }
 
-.box-fat input[type="radio"]:hover + label::after{
+/*.box-fat input[type="radio"] + label:not(:disabled):hover::after{
 	background: #ffffff;
 	opacity: 1;
+}*/
+
+.box-fat input[type="radio"]:disabled + label{
+	opacity: 0.4;
 }
+
+
 
 .box-filters{
 	margin-right: 20px;
@@ -1171,7 +1207,7 @@ a{
 	display: flex;
 	padding: 10px 15px;
 	margin: 0;
-	background-color: rgb(225, 255, 255, 0.3);
+	background-color: rgba(225, 255, 255, 0.3);
 	max-width: 700px;
 	border-radius: 25px;
 }
@@ -1459,6 +1495,15 @@ a{
 	border-radius: 50%;
 }
 
+.pagination-list li:active{
+	background: #ffffff;
+	border-radius: 50%;
+	color: #000;
+}
+
+
+
+
 .pagination-list > li > a:hover{
 	color: #ffffff;
 }
@@ -1536,6 +1581,16 @@ body{
 .social-button img{
 	border-radius: 50%;
 	border: 3px solid rgba(255,255,255, 0.5);
+	opacity: 0.8;
+}
+
+.social-button img:hover{
+	opacity: 1;
+}
+
+.social-button img:active{
+	border: 3px solid #ffffff;
+	opacity: 0.7;
 }
 
 .information{
