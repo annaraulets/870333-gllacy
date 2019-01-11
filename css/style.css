@@ -1182,6 +1182,7 @@ a{
 
 .box-fat input[type="radio"]:checked + label::after{
 	opacity: 1;
+	background-color: rgba(255, 255, 255, 0.7);
 }
 
 .box-fat input[type="radio"] + label:not(:disabled):hover::before{
@@ -1189,10 +1190,10 @@ a{
 	opacity: 1;
 }
 
-/*.box-fat input[type="radio"] + label:not(:disabled):hover::after{
+.box-fat input[type="radio"] + label:not(:disabled):hover::after{
 	background: #ffffff;
 	opacity: 1;
-}*/
+}
 
 .box-fat input[type="radio"]:disabled + label{
 	opacity: 0.4;
@@ -1237,13 +1238,15 @@ a{
 	opacity: 1;
 }
 
-.box-filters input[type="checkbox"]:hover + label::before{
+.box-filters input[type="checkbox"] + label:not(:disabled):hover::before{
 	opacity: 1;
-	/*background-image: url(../img/checkbox-on.svg);
-	background-size: 22px 22px;
-	left: -30px;
-	top: -1px;*/
 }
+
+.box-filters input[type="checkbox"]:disabled + label{
+	opacity: 0.4;
+}
+
+
 .box-fat input[type="radio"]:focus + label{
 	outline: rgb(77,166,255) auto 5px;
 }
@@ -1251,6 +1254,8 @@ a{
 .box-filters input[type="checkbox"]:focus + label{
 	outline: rgb(77,166,255) auto 5px;
 }
+
+
 
 .button-select{
 	margin-top: 20px;
