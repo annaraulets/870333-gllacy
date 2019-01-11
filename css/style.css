@@ -145,6 +145,7 @@ a{
 	color: #ffffff;
 
 	background-color: transparent;
+	margin-bottom: 45px;
 }
 
 .site-navigation,
@@ -185,12 +186,12 @@ a{
 	margin-right: 0;
 }
 
-.site-navigation > li:after{
+/*.site-navigation > li:after{
 	display: block;
 	content: "";
 	width: 80px;
 	height: 50px;
-}
+}*/
 
 .site-navigation > li > a {
 	display: inline-block;
@@ -449,7 +450,7 @@ a{
 .entrance-popup a{
 	font-size: 13px;
 	color: #323232;
-	text-decoration: underline;
+	border-bottom: 1px solid #323232;
 	text-align: left;
 	opacity: 0.7;
 }
@@ -458,6 +459,11 @@ a{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+}
+
+.entrance-popup a:hover{
+	color: #e84d37;
+	border-bottom: 1px solid #e84d37;
 }
 
 .button-entrance{
@@ -533,7 +539,7 @@ a{
 	color: #323232;
 	text-align: left;
 	padding: 0;
-	margin: 0 0 20px 0;
+	margin: 0 0 22px 0;
 }
 .about-gllacy{
 	box-sizing: border-box;
@@ -550,7 +556,7 @@ a{
 }
 
 .about-gllacy-col{
-	width: 535px;
+	width: 537px;
 }
 
 .about-gllacy-col:last-child p{
@@ -559,13 +565,13 @@ a{
 
 .about-gllacy-col p{
 	position: relative;
-	padding-left: 58px;
+	padding-left: 56px;
 	margin-bottom: 21px;
 }
 
 .about-gllacy-col img{
 	position: absolute;
-	top: 0;
+	top: -11px;
 	left: 0;
 }
 
@@ -604,9 +610,14 @@ a{
 
 .news a{
 	color: #323232;
-	text-decoration: underline;
+	border-bottom: 2px solid #000;
 	font-size: 24px;
 	line-height: 30px;
+}
+
+.news a:hover{
+	color: #e84d37;
+	border-bottom: 2px solid #e84d37;
 }
 
 
@@ -741,7 +752,7 @@ a{
 
 .container.section-map{
 	position: relative;
-	left: -70px;
+	left: -20px;
 	padding: 0;
 	margin: 0;
 }
@@ -750,7 +761,7 @@ a{
 	position: absolute;
 	box-sizing: border-box;
 	top: 63px;
-	right: -70px;
+	right: -20px;
 	background-color: #ffffff;
 	width: 300px; 
 	color: #323232;
@@ -924,11 +935,6 @@ a{
 	list-style: none;
 }
 
-/*.breadcrumbs {
-	text-decoration: none;
-	color: #ffffff;
-	list-style: none;
-}*/
 
 .breadcrumbs > li{
 	margin-right: 18px;
@@ -942,9 +948,13 @@ a{
 }
 
 .breadcrumbs > li > a{
-	text-decoration: underline;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.breadcrumbs > li > a:hover{
+	color: #ffbc9e;
+	border-bottom: 1px solid #ffbc9e;
+}
 
 
 .filters fieldset{
@@ -1005,15 +1015,9 @@ a{
 	background-color: #ffffff;
 }
 
-/*.custom-select::before{
-	position: absolute;
-	top: 0;
-	left: -40px;
-	background-image: url(../img/select-arrow.svg);
-	background-size: 10px 10px;
-	width: 12px;
-	height: 12px;
-}*/
+
+
+
 .box-switch{
 	margin-right: 14px;
 }
@@ -1076,14 +1080,19 @@ a{
 	background-size: 20px 22px;
 }
 
+.switch-one:hover::after,
+.switch-two:hover::after{
+	transform: scale(1.25);
+}
+
 
 .filter-option{
 	padding-left: 35px; 
-	margin: 0 20px 0 0;
+	margin: 0 17px 0 0;
 }
 
 .filter-option:last-child{
-	margin-right: 0;
+	margin-right: 5px;
 }
 
 .box-fat ul{
@@ -1155,6 +1164,9 @@ a{
 	opacity: 1;
 }
 
+.box-filters{
+	margin-right: 20px;
+}
 .box-filters ul{
 	display: flex;
 	padding: 10px 15px;
@@ -1168,6 +1180,7 @@ a{
 	position: relative;
 	cursor: pointer;
 }
+
 .box-filters input[type="checkbox"] + label::before{
 	content: "";
 	position: absolute;
@@ -1232,6 +1245,12 @@ a{
 	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.ice-text a:hover{
+	color: #ffbc9e;
+	border-bottom: 1px solid #ffbc9e;
+	cursor: pointer;
+}
+
 
 .ice-name li{
 	position: relative;
@@ -1250,6 +1269,7 @@ a{
 .ice-name li:hover::before{
 	display: block;
 }
+
 .ice-name li:hover{
 	z-index: 1000;
 }
@@ -1266,6 +1286,7 @@ a{
 	top: -6px;
 	border-radius: 5px;
 	box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+	z-index: -1;
 }
 
 
@@ -1439,7 +1460,7 @@ a{
 }
 
 .pagination-list > li > a:hover{
-	color: #323232;
+	color: #ffffff;
 }
 
 
@@ -1517,7 +1538,6 @@ body{
 	border: 3px solid rgba(255,255,255, 0.5);
 }
 
-
 .information{
 	display: flex;
 	flex-wrap: wrap;
@@ -1528,7 +1548,7 @@ body{
 }
 
 .information li{
-	width: 50%;
+	min-width: 42%;
 	position: relative;
 }
 
@@ -1540,7 +1560,12 @@ body{
 }
 
 .information a{
-	text-decoration: underline;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.information a:hover{
+	color: #ffbc9e;
+	border-bottom: 1px solid #ffbc9e;
 }
 
 .academy p{
@@ -1548,6 +1573,14 @@ body{
 	margin: 0;
 }
 
+.academy-site a{
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.academy-site a:hover{
+	color: #ffbc9e;
+	border-bottom: 1px solid #ffbc9e;
+}
 
 .index-promo{
 	display: flex;
