@@ -549,7 +549,7 @@ a{
 }
 
 
-.about{
+.about.container{
 	min-width: 1146px;
 	height: auto;
 	box-sizing: border-box;
@@ -792,6 +792,11 @@ a{
 	position: relative;
 }
 
+.google-map{
+	width: 100%;
+	position: absolute;
+}
+
 .map-info{
 	position: absolute;
 	box-sizing: border-box;
@@ -950,7 +955,7 @@ a{
 }
 
 .breadcrumbs-nav > h1{
-	margin: 5px 0 25px 0;
+	margin: 0 0 25px 0;
 	padding: 0;
 	font-size: 35px;
 	line-height: 41px;
@@ -962,9 +967,8 @@ a{
 	flex-direction: row;
 	justify-content: flex-start;
 	flex-wrap: wrap;
-	position: absolute;
-	top: -25px;
-	margin: 0;
+	margin-top: -25px;
+	margin-bottom: 0;
 	padding: 0;
 	font-size: 14px;
 	text-decoration: none;
@@ -1057,6 +1061,13 @@ a{
 
 .box-switch{
 	margin-right: 14px;
+}
+
+.box-switch p{
+	font-size: 14px;
+	line-height: 16px;
+	margin-bottom: 5px;
+	margin-left: 18px;
 }
 
 .switch-wrapper{
@@ -1311,8 +1322,8 @@ a{
 .ice-name .button{
 	position: absolute;
 	display: none;
-	top: 339px;
 	left: 35px;
+	bottom: -57px;
 }
 
 .ice-name li:hover .button{
@@ -1654,6 +1665,7 @@ body{
 .index-promo{
 	display: flex;
 	justify-content: space-between;
+	align-items: flex-start;
 	padding-bottom: 40px;
 }
 
@@ -1661,7 +1673,7 @@ body{
 	width: 520px;
 	background-color: #bc1a63;
 	background-image: url(../img/berry.jpg);
-	background-size: 560px 230px;
+	background-size: cover;
 	border-radius: 15px;
 	background-repeat: repeat;
 	padding: 18px 22px 24px 18px;
@@ -1673,7 +1685,7 @@ body{
 	background-image: url(../img/choko.jpg);
 	border-radius: 15px;
 	background-repeat: repeat;
-	background-size: 560px 230px;
+	background-size: cover;
 	padding: 18px 22px 24px 18px;
 }
 
