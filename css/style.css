@@ -175,7 +175,7 @@ a{
 
 .user-navigation .button:hover,
 .user-navigation .button:focus {
-	color: #323232;
+	color: #ffffff;
     background-color: #f8f7f4;
 
 }
@@ -200,12 +200,6 @@ a{
 	margin-right: 0;
 }
 
-/*.site-navigation > li:after{
-	display: block;
-	content: "";
-	width: 80px;
-	height: 50px;
-}*/
 
 .site-navigation > li > a {
 	display: inline-block;
@@ -224,6 +218,12 @@ a{
 	background-color: #f8f7f4;
 	border-radius: 50px;
 	text-decoration: none;
+}
+
+.site-navigation > li:active > a:not(.active){
+	color: #323232;
+	background-color: #ededed;
+	box-shadow: inset 0px 2px 1px 0 #696969;
 }
 
 .sub-menu{
@@ -280,6 +280,10 @@ a{
 
 .site-navigation > li:hover .sub-menu{
 	display: block;
+}
+
+.sub-menu > li:active{
+	background-color: #f6b5a5;
 }
 
 
@@ -449,12 +453,12 @@ a{
 .entrance-popup{
 	position: absolute;
 	display: none;
-	width: 240px;
-	height: 195px;
+	max-width: 240px;
+	/*height: 195px;*/
 	top: 36px;
 	left: -180px;
 	background-color: #f8f7f4;
-	padding: 20px 17px 0 19px;
+	padding: 20px 17px 20px 19px;
 	border-radius: 5px;
 	box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 	z-index: 2000;
@@ -1221,7 +1225,7 @@ a{
 }
 
 .filter-option:last-child{
-	margin-right: 5px;
+	margin-right: 10px;
 }
 
 .box-fat ul{
@@ -1360,17 +1364,23 @@ a{
 
 .button-select{
 	margin-top: 20px;
-	height: 38px;
+	line-height: 18px;
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 20px;
-	border: 1px solid #ffffff;
+	border: 2px solid #ffffff;
 	color: #ffffff;
-	padding: 10px 30px;
+	padding: 6px 28px;
 }
 
 .button-select:hover{
 	background-color: #ffffff;
 	color: #323232;
+}
+
+.button-select:active{
+	border: none;
+	box-shadow: inset 0px 2px 1px 0 #696969;
+  	background-color: #ededed;
 }
 
 
@@ -1596,23 +1606,22 @@ a{
 	height: 10px;
 }
 
-.pagination-list li:hover{
-	background: rgba(255, 255, 255, 0.3);
+.pagination-list li:not(.pagination-item-current):hover a{
+	background-color: rgba(255, 255, 255, 0.3);
 	border-radius: 50%;
-}
-
-.pagination-list li:active{
-	background: #ffffff;
-	border-radius: 50%;
-	color: #000;
-}
-
-
-
-
-.pagination-list > li > a:hover{
 	color: #ffffff;
 }
+
+/*.pagination-list > li > a:not(.pagination-item-current):hover{
+	color: #ffffff;
+}*/
+
+.pagination-list li:active a{
+	background-color: #ffffff;
+	border-radius: 50%;
+	color: #323232;
+}
+
 
 
 
