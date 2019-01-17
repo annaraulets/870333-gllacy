@@ -512,6 +512,7 @@ a {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	align-items: flex-start;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	-ms-flex-direction: row;
@@ -1659,7 +1660,7 @@ a {
 	color: #ffffff;
 }
 
-.pagination-list li:active a {
+.pagination-list li:not(.pagination-item-current):active a {
 	background-color: #ffffff;
 	border-radius: 50%;
 	color: #323232;
