@@ -31,7 +31,7 @@ a {
 .site-wrapper {
 	min-width: 940px;
 	background-color: #849d8f;
-	background-image: url("../img/slider-item1.png");
+	background-image: url(../img/slider-item1.png);
 	background-repeat: no-repeat;
 	background-position: top center;
 	-webkit-transition: background-image 0.5s ease, background-color 0.5s ease;
@@ -46,11 +46,11 @@ a {
 }
 
 .site-wrapper::before {
-	background-image: url("../img/slider-item2.png");
+	background-image: url(../img/slider-item2.png);
 }
 
 .site-wrapper::after {
-	background-image: url("../img/slider-item3.png");
+	background-image: url(../img/slider-item3.png);
 }
 
 .slider {
@@ -111,17 +111,17 @@ a {
 
 #product-1:checked~.site-wrapper {
 	background-color: #849d8f;
-	background-image: url("../img/slider-item1.png");
+	background-image: url(../img/slider-item1.png);
 }
 
 #product-2:checked~.site-wrapper {
 	background-color: #8996a6;
-	background-image: url("../img/slider-item2.png");
+	background-image: url(../img/slider-item2.png);
 }
 
 #product-3:checked~.site-wrapper {
 	background-color: #9d8b84;
-	background-image: url("../img/slider-item3.png");
+	background-image: url(../img/slider-item3.png);
 }
 
 #product-1:checked~.site-wrapper #slide1,
@@ -512,7 +512,9 @@ a {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	align-items: flex-start;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	-ms-flex-direction: row;
@@ -586,7 +588,7 @@ a {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	background-color: #ead7b6;
-	background-image: url("../img/about-bg.jpg");
+	background-image: url(../img/about-bg.jpg);
 	background-size: 1146px 306px;
 	background-repeat: repeat;
 	border-radius: 15px;
@@ -701,7 +703,7 @@ a {
 	padding: 23px 0 20px 20px;
 	color: #323232;
 	background-color: #ffffff;
-	background-image: url("../img/back-news.jpg");
+	background-image: url(../img/back-news.jpg);
 	background-position: 0 0;
 	background-size: 560px 220px;
 	background-repeat: repeat;
@@ -738,7 +740,7 @@ a {
 	color: #5a5a5a;
 	font-size: 16px;
 	line-height: 22px;
-	background-image: url("../img/bg-post.svg");
+	background-image: url(../img/bg-post.svg);
 	background-size: 560px 220px;
 	background-repeat: repeat;
 	border-radius: 15px;
